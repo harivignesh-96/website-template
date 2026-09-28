@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noolagam · Kanchipuram Soft Silk Sarees</title>
+  <meta name="description" content="Kanchipuram soft silk sarees in sandal and maroon, handwoven with pure zari. Unfold a legacy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Mona+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/index.js",
+        "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger.js",
+        "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.mjs"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="logo">Noolagam<span>·</span></a>
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#craft">Craft</a>
+      <a href="#visit">Visit</a>
+      <a href="/store" class="btn-sm">All Sarees</a>
+    </nav>
+  </header>
+
+  <!-- 3D unfold hero: pinned while scroll drives the saree -->
+  <section id="unfold" class="unfold">
+    <div class="stage">
+      <canvas id="saree"></canvas>
+      <div class="loader" id="loader">Unfolding silk…</div>
+
+      <div class="beat" data-beat="0">
+        <p class="eyebrow">Kanchipuram Soft Silk</p>
+        <h1>Unfold<br /><em>a legacy.</em></h1>
+        <p class="scroll-hint">Scroll to unfold ↓</p>
+      </div>
+      <div class="beat right" data-beat="1">
+        <p class="eyebrow">Fold by fold</p>
+        <h2>Six yards,<br /><em>folded with care.</em></h2>
+        <p>Every saree leaves our looms pressed and pleated, the pallu resting on top like a promise.</p>
+      </div>
+      <div class="beat" data-beat="2">
+        <p class="eyebrow">Sandal &amp; Maroon</p>
+        <h2>Soft as<br /><em>temple dusk.</em></h2>
+        <p>Featherweight soft silk body, a contrast korvai border and pure zari that catches every light.</p>
+      </div>
+      <div class="beat center" data-beat="3">
+        <p class="eyebrow">Starting at</p>
+        <h2 class="price">₹ 800<small>/-</small></h2>
+        <a href="#collection" class="btn">Explore the collection</a>
+      </div>
+
+      <div class="progress"><span id="bar"></span></div>
+    </div>
+  </section>
+
+  <section id="collection" class="section">
+    <div class="head">
+      <p class="eyebrow">The Soft Silk Edit</p>
+      <h2>Kanchipuram soft silks</h2>
+      <p>Lighter than traditional Kanchi silk, with the same temple borders. Made for long days and slow evenings.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="craft" class="section craft">
+    <div class="craft-copy">
+      <p class="eyebrow">The Craft</p>
+      <h2>Woven where<br /><em>silk meets stone.</em></h2>
+      <p>In Kanchipuram, a soft silk saree takes a weaver around ten days on the loom. The body and border are woven apart and interlocked by hand (<em>korvai</em>), so the border never frays away from the body.</p>
+    </div>
+    <ol class="steps">
+      <li><b>01</b><span>Mulberry silk</span>Pure silk yarn, dyed in sandal and maroon.</li>
+      <li><b>02</b><span>Zari</span>Silver-core thread, gilded for the border and pallu.</li>
+      <li><b>03</b><span>Korvai</span>Border interlocked with the body by hand.</li>
+      <li><b>04</b><span>Soft finish</span>Light weight that drapes easily.</li>
+    </ol>
+  </section>
+
+  <section id="visit" class="section visit">
+    <h2>Touch the silk <em>before you choose.</em></h2>
+    <p>See the drape and the zari in person at our store, or let us unfold it for you on a video call.</p>
+    <div class="cta-row">
+      <a class="btn" href="#">WhatsApp a video call</a>
+      <a class="btn ghost" href="#">Get directions</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="logo">Noolagam<span>·</span></span>
+    <span>Kanchipuram soft silk · Handwoven · Pure zari</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
